@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 400px;
+            text-align: center;
+        }
+        label {
+            display: block;
+            margin-bottom: 8px;
+            text-align: left;
+        }
+        input {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 16px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            background-color: yellowgreen;
+            color: #fff;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        img {
+            width: 100%;
+            border-radius: 8px 8px 0 0;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <img src="fix.png" alt="gambar header">
+        <form>
+            <label for="fname">First Name:</label><br>
+            <input type="text" id="fname" name="fname"><br>
+
+            <label for="lname">Last Name:</label><br>
+            <input type="text" name="lname" id="lname"><br>
+
+            <label for="pass">Password:</label><br>
+            <input type="password" name="pass" id="pass">
+
+            <label for="kuesioner">Kuesioner:</label>
+            <textarea name="kuesioner" id="kuosioner" cols="30" rows="10"></textarea>
+
+            <button type="submit" style="text-align: center;">submit</button>
+        </form>
+    </div>
+</body>
+</html>

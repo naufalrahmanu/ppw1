@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Semantic HTML Page</title>
+    <link rel="icon" href="logo dewe.ico" type="image/x-icon">
+    <style>
+        .hamburger {
+            display: inline-block;
+            cursor: pointer;
+            padding: 10px;
+            background-color: transparent;
+            border: none;
+            outline: none;
+        }
+
+        .hamburger div {
+            width: 25px;
+            height: 3px;
+            background-color: black;
+            margin: 4px;
+            transition: all 0.3s;
+        }
+
+        .hamburger:hover div {
+            background-color: grey;
+        }
+
+        .change .bar1 {
+            transform: rotate(-45deg) translate(-5px, 5px);
+        }
+
+        .change .bar2 {
+            opacity: 0;
+        }
+
+        .change .bar3 {
+            transform: rotate(45deg) translate(-5px, -5px);
+        }
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #7c3535;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #1fb524;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+        nav {
+            background-color: #f1f1f1;
+            padding: 1rem;
+        }
+        nav a {
+            color: #333;
+            text-decoration: none;
+            margin-right: 1rem;
+        }
+        main {
+            padding: 2rem;
+        }
+        article {
+            margin-bottom: 2rem;
+        }
+        footer {
+            background-color: #259229;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>infokan website</h1>
+    </header>
+    <nav>
+        <a href="#">tombol 1</a>
+        <a href="#">tombol 2</a>
+       <a href="#">tombol 3</a>
+    </nav>
+    <main>
+        <section>
+          <button class="hamburger">
+              <div class="bar1"></div>
+              <div class="bar2"></div>
+              <div class="bar3"></div>
+          </button>
+          <script>
+              const hamburger = document.querySelector('.hamburger');
+              hamburger.addEventListener('click', () => {
+                  hamburger.classList.toggle('change');
+              });
+          </script>
+        </section>
+        <section>
+            <h2>Bagian atas</h2>
+            <p>dicoba di bagian atas</p>
+        </section>
+        <article>
+            <h2>contoh 1</h2>
+            <ul>
+                <li>mantap 1</li>
+                <li>mantap 2</li>
+                <li>mantap 3</li>
+            </ul>
+        </article>
+        <article>
+            <h2>contoh2</h2>
+            <ul>
+                <li>header</li>
+                <li>nav</li>
+                <li>main</li>
+                <li>section</li>
+                <li>article</li>
+                <li>aside</li>
+                <li>footer</li>
+            </ul>
+        </article>
+    </main>
+    <footer>
+        &copy; Paling Bawah
+    </footer>
+</body>
+</html>
